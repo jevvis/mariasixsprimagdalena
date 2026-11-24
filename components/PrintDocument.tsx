@@ -196,13 +196,13 @@ export default function PrintDocument() {
         {[1, 2].map((i) => (
           <Bleed key={i} x={i === 1 ? '-14mm' : '134.5mm'} w="148.5mm">
             <Photo src={`/galeri/edu-${i}-1.jpg`} h="100%" pos={i === 1 ? 'center 18%' : 'center 22%'} style={{ position: 'absolute', inset: 0 }} />
-            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,.45) 0%, rgba(0,0,0,.1) 28%, rgba(0,0,0,.8) 56%, rgba(0,0,0,.95) 100%)' }} />
+            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,0) 24%, rgba(0,0,0,0) 56%, rgba(0,0,0,.62) 70%, rgba(0,0,0,.9) 100%)' }} />
             <div style={{ position: 'absolute', left: '14mm', top: '30mm', right: '10mm' }}>
               <Outline size="62pt">{dash(t(`education.${i}.period`))}</Outline>
             </div>
-            <div style={{ position: 'absolute', left: '14mm', right: '12mm', bottom: '17mm' }}>
+            <div style={{ position: 'absolute', left: '14mm', right: '12mm', bottom: '17mm', textShadow: '0 1px 6px rgba(0,0,0,.75)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '5mm' }}>
-                <div style={{ width: '25mm', height: '25mm', borderRadius: '50%', background: EM, color: INK, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flex: 'none', transform: 'rotate(-8deg)' }}>
+                <div style={{ width: '25mm', height: '25mm', borderRadius: '50%', background: EM, color: INK, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flex: 'none', transform: 'rotate(-8deg)', textShadow: 'none' }}>
                   <span style={{ fontFamily: OSW, fontWeight: 700, fontSize: '16pt', lineHeight: 1 }}>{t(`education.${i}.gpa`).split(' / ')[0]}</span>
                   <span style={{ fontSize: 5.6, letterSpacing: '0.12em', fontWeight: 800, marginTop: 2 }}>{t('education.gpa.label')}</span>
                 </div>
