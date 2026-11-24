@@ -44,7 +44,7 @@ const projects = [
   {
     number: '06',
     title: { id: "Magang S1 di RS Anutapura Palu", en: "Bachelor Internship at RS Anutapura Palu" },
-    description: { id: "Magang S1 Farmasi di rumah sakit, April — Mei 2024.", en: "Bachelor of Pharmacy internship at a hospital, April — May 2024." },
+    description: { id: "PIO, distribusi obat ke depo rawat inap dan rawat jalan, penyiapan obat pasien, dan pengisian stok, April — Mei 2024.", en: "Drug information (PIO), medicine distribution to inpatient and outpatient depots, patient medicine preparation, and restocking, April — May 2024." },
     framework: "RS ANUTAPURA PALU",
     techStack: ["Magang S1"],
   },
@@ -58,7 +58,7 @@ const projects = [
   {
     number: '08',
     title: { id: "Magang S1 di LAFI AD", en: "Bachelor Internship at LAFI AD" },
-    description: { id: "PKL di bidang industri farmasi, Agustus — September 2023.", en: "Field practice in the pharmaceutical industry, August — September 2023." },
+    description: { id: "PKL di bidang industri farmasi, Agustus 2023.", en: "Field practice in the pharmaceutical industry, August 2023." },
     framework: "LAFI AD, BANDUNG",
     techStack: ["Magang S1", "Industri"],
   },

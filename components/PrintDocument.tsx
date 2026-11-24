@@ -22,7 +22,7 @@ const OSW = 'var(--font-oswald), Impact, sans-serif'
 
 const TOTAL = 9
 const PH = '209.6mm' // tinggi halaman
-const HAS_PHOTO = new Set([1, 2, 3, 4, 5, 6, 8])
+const HAS_PHOTO = new Set([1, 2, 3, 4, 5, 6, 7, 8])
 
 function Waves({ c, o }: { c: string; o: number }) {
   return (
@@ -258,8 +258,8 @@ export default function PrintDocument() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '7mm 9mm', marginTop: '6mm' }}>
           {[4, 5, 6, 1, 2, 3].map((i) => (
             <div key={i}>
-              {i >= 4 ? (
-                <div style={{ background: '#fff', padding: '2mm', transform: `rotate(${[-1.2, 1, -0.8][i - 4]}deg)`, boxShadow: '0 3mm 6mm rgba(0,0,0,.32)' }}>
+              {i !== 2 ? (
+                <div style={{ background: '#fff', padding: '2mm', transform: `rotate(${[0.8, 0, -0.9, -1.2, 1, -0.8][i - 1]}deg)`, boxShadow: '0 3mm 6mm rgba(0,0,0,.32)' }}>
                   <Photo src={`/galeri/cert-${i}.jpg`} h="38mm" fit="contain" style={{ background: '#fff' }} />
                 </div>
               ) : (

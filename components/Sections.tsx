@@ -1136,7 +1136,7 @@ export function AwardsSection() {
 
   const certificationsList = Array.from({ length: 6 }, (_, i) => ({
     id: i + 1,
-    image: (i >= 3 ? `/galeri/cert-${i + 1}.jpg` : undefined) as string | undefined,
+    image: ((i === 0 || i === 2 || i >= 3) ? `/galeri/cert-${i + 1}.jpg` : undefined) as string | undefined,
     file: undefined as string | undefined,
   })).map((c) => ({
     ...c,

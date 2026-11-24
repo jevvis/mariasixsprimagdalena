@@ -288,7 +288,7 @@ export default function WorkGallery() {
       prefix="work"
       sectionId="work"
       showCta
-      imageSets={[5, 4, 2, 3, 3, 2, 0, 2].map((count, i) => Array.from({ length: count }, (_, m) => `/galeri/work-${i + 1}-${m + 1}.jpg`))}
+      imageSets={[5, 4, 2, 3, 3, 2, 1, 2].map((count, i) => Array.from({ length: count }, (_, m) => `/galeri/work-${i + 1}-${m + 1}.jpg`))}
     />
   )
 }
